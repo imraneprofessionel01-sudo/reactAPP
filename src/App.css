@@ -1,0 +1,73 @@
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 18rem));
+  justify-content: center;
+  gap: 20px;
+}
+
+.card-item {
+  width: 100%;
+}
+
+.reaction-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.reaction-button {
+  border: 0;
+  background: transparent;
+  color: #6c757d;
+  font-size: 1.1rem;
+  padding: 4px;
+}
+
+.like-button:focus,
+.like-button:hover,
+.like-button:active {
+  color: #0d6efd;
+}
+
+.dislike-button:focus,
+.dislike-button:hover,
+.dislike-button:active {
+  color: #dc3545;
+}
+
+.comment-form {
+  display: flex;
+  gap: 8px;
+}
+
+.comment-input {
+  min-width: 0;
+}
+
+.comment-button {
+  white-space: nowrap;
+}
+
+.comments-list {
+  margin-top: 12px;
+}
+
+.comment-item {
+  background: #f8f9fa;
+  border-radius: 6px;
+  margin: 6px 0 0;
+  padding: 8px;
+  word-break: break-word;
+}
+
+@media (max-width: 992px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, minmax(0, 18rem));
+  }
+}
+
+@media (max-width: 576px) {
+  .cards-grid {
+    grid-template-columns: minmax(0, 18rem);
+  }
+}
